@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 88),
+    rgb(135, 175, 250)
+  );
+}
+
+nav > img {
+  padding-left: 80px;
+  height: 70%;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.nav-container .infos {
+  display: flex;
+  background-color: white;
+  flex: 1;
+  gap: 30px;
+  align-items: center;
+  padding-right: 200px;
+  position: relative;
+}
+
+.nav-container .infos::before {
+  content: "";
+  width: 150px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: -50px;
+  z-index: 0;
+  transform: skewX(40deg);
+}
+.nav-container .infos div {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  z-index: 2;
+}
+.nav-container ul {
+  display: flex;
+  flex: 2;
+  width: 60%;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-right: 80px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: space-around;
+color: wheat;
+
+  background-image: url(https://i.ebayimg.com/images/g/n8IAAOSwltRkNCSF/s-l1200.webp);
+}
+.description {
+text-align: center;
+line-height: 80px;
+}
+.description h2{
+    color: rgb(248, 243, 253);
+
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.description h1{
+    color: aquamarine;
+    font-weight: 800;
+    font-size: 5rem;
+}
+.description button{
+    background-color: orange;
+    height: 70px;
+    width: 200px;
+    border-radius: 70px;
+    border: none;
+    color: inherit;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+section .form-container{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.527);
+    position: relative;
+    
+}
+.form-container h2{
+padding: 0 30px;
+background-color: bisque;
+width: max-content;
+height: 50px;
+color: black;
+position: absolute;
+
+top: -51px;
+display: flex;
+align-items: center;
+}
+
+.form-container form{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    margin-right: 30px;
+
+}
+
+.form-container form div,.form-container from button{
+    flex: 1;
+    padding: 0px 30px;
+    
+
+}
+.form-container form div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+
+.form-container form button{
+    width: 200px ;
+    height: 50px;
+    background-color: orange;
+}
+
+.form-container form div div input,select{
+    height: 40px;
+    width: 100%;
+}
